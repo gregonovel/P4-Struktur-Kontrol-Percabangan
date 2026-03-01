@@ -1,0 +1,11 @@
+try:
+    pembelian = int(input("Masukkan nominal pembelian anda: "))
+    if pembelian >= 100000:
+        hargaDiskon = pembelian * 0.3
+        setelahDiskon = pembelian - hargaDiskon
+        print(f"Anda mendapatkan diskon sebesar {hargaDiskon}")
+        print(f"Total anda adalah {setelahDiskon}")
+    else:
+        print("Maaf anda tidak mendapatkan diskon")
+except:
+    print("Maaf, data yang anda masukkan tidak valid...")
