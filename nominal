@@ -1,0 +1,8 @@
+try:
+    pembelian = int(input("Masukkan nominal pembelian anda: "))
+
+    diskon = 0.3 if pembelian > 1000000 else (0.2 if pembelian > 500000 and pembelian <= 1000000 else (0.15 if pembelian >= 1000000 and pembelian <= 500000 else 0))
+    harga = pembelian - (pembelian * diskon)
+    print(f"Total anda adalah {harga}")
+except:
+    print("Maaf, data yang anda masukkan tidak valid...")
